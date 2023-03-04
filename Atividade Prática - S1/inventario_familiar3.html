@@ -4,64 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Somente o css para as 3 imagens-->
-    <style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #f2f2f2;
-			padding: 20px;
-		}
-
-		h1 {
-			text-align: center;
-			margin-bottom: 30px;
-		}
-
-		.intro {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-
-		.intro-item {
-			margin: 20px;
-			padding: 20px;
-			background-color: white;
-			box-shadow: 0 0 20px rgba(0,0,0,0.1);
-			text-align: center;
-		}
-
-		.intro-item img {
-			width: 400px;
-			height: 200px;
-			object-fit: cover;
-			margin-bottom: 10px;
-		}
-
-		.intro-item h2 {
-			margin-top: 0;
-			font-size: 24px;
-		}
-
-		.intro-item p {
-			font-size: 16px;
-		}
-
-		a {
-			color: #4CAF50;
-			text-decoration: none;
-		}
-
-		a:hover {
-			text-decoration: underline;
-		}
-	</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Implementação das imagens-->
-	<h1>Inventário Familiar</h1>
 
+  <!--Implementação das imagens-->
+  <div class="img">
+	<h1>Inventário Familiar</h1>
 	<div class="intro">
 		<div class="intro-item">
 			<img class="intro-img" src="https://www.rossetticleto.adv.br/wp-content/uploads/2021/09/Inventario-ou-holding-familiar.png" alt="Imagem 1">
@@ -97,197 +46,133 @@
         <li>Comprovantes de propriedade de bens: documentos que comprovem a propriedade de bens, como imóveis, carros, joias, entre outros.</li>
         <li>Comprovantes de dívidas: é importante ter em mãos todos os comprovantes de dívidas, para que elas possam ser incluídas no inventário.</li>
     <p>Além desses documentos, é importante também ter em mãos informações como a relação completa de bens do falecido, valores de contas bancárias, investimentos, apólices de seguros, entre outras.<br>A elaboração do inventário familiar é um processo que exige muita atenção e cuidado para que tudo seja realizado de forma correta e justa. É recomendado buscar a orientação de um advogado especializado em direito sucessório para garantir que todos os documentos e informações estejam corretos e para ajudar no processo de elaboração do inventário.</p>
-
-<!--CSS-->
+</div>
 <title>Inventário</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        padding: 20px;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        background-color: white;
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-
-    th, td {
-        text-align: left;
-        padding: 8px;
-        border: 1px solid #ddd;
-    }
-
-    .table-header th {
-        background-color: #4CAF50;
-        color: white;
-    }
-
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    .add-item {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        padding: 20px;
-        background-color: white;
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-
-    input[type="text"] {
-        padding: 8px;
-        margin-bottom: 10px;
-        border: none;
-        border-bottom: 1px solid #ddd;
-        font-size: 16px;
-    }
-
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 8px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-
-    input[type="submit"]:hover {
-        background-color: #3e8e41;
-    }
-</style>
 </head>
 <body>
 
 <!--Parte da Tabela-->
-<h1>Exemplo de Inventário </h1>
-    <h2>Fernando Costa Oliveira</h2>
-
-<table>
-    <tr>
-        <th>Objeto</th>
-        <th>Tipo</th>
-        <th>Modelo</th>
-        <th>Marca</th>
-        <th>Quantidade</th>
-        <th>Valor Unitário</th>
-        <th>Valor Total</th> 
-    </tr>
-        <th>Casa</th>
-        <th>Imóvel</th>
-        <th></th>
-        <th></th>
-        <th>1</th>
-        <th>R$ 220.000,00</th>
-        <th>R$ 220.000,00</th>
-        
-        
-    </tr>
-    <tr>
-        <th>Lote</th>
-        <th>Terreno</th>
-        <th></th>
-        <th></th>
-        <th>1</th>
-        <th>R$ 90.000,00</th>
-        <th>R$ 90.000,00</th>
-    <tr>
-        
-    </tr>
-        <th>Carro</th>
-        <th>Veículo</th>
-        <th>Tiggo 5X</th>
-        <th>Chery</th>
-        <th>1</th>
-        <th>R$110.000,00</th>
-        <th>R$110.000,00</th>
-    <tr>
-        
-    </tr>
-    <tr>
-        <th>Televisão</th>
-        <th>Eletrodoméstico</th>
-        <th>Smart tv led 45 lg</th>
-        <th>LG</th>
-        <th>1</th>
-        <th>R$ 2.500</th>
-        <th>R$ 2.500</th>
-    </tr>
-    <tr>
-        <th>Geladeira</th>
-        <th>Eletrodoméstico</th>
-        <th>Geladeira/Refrigerador DC35A</th>
-        <th>Electrolux</th>
-        <th>1</th>
-        <th>R$ 2.098,99</th>
-        <th>R$ 2.098,99</th>
-    </tr>
-    <tr>
-        <th>Micro-Ondas</th>
-        <th>Eletrodoméstico</th>
-        <th>PMO23BB 20 Litros</th>
-        <th>Philco</th>
-        <th>1</th>
-        <th>R$ 567,95</th>
-        <th>R$ 567,95</th>
-    </tr>
-</table>
-
-    <!-- Parte do Formulário -->
-    <div>
-        <h3>Formulário de Contato</h1>
-        <form action="" method="">
-          <p>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
-          </p>
-          <p>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-          </p>
-          <p>
-            <input type="submit" value="Enviar">
-          </p>
-        </form>
-
-    
-    <!-- Parte da pesquisa de Satisfação -->
-    </div>
-        <h3>Pesquisa de satisfação</h4>
-            <form action="formulario.txt" method="">
-            <p>Como você avalia a nossa Postagem:</p>
+<div class="textoprincipal">
+  <h1>Exemplo de Inventário </h1>
+      <h2>Fernando Costa Oliveira</h2>
+  
+  <table>
+      <tr>
+          <th>Objeto</th>
+          <th>Tipo</th>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Quantidade</th>
+          <th>Valor Unitário</th>
+          <th>Valor Total</th>
+      </tr>
+          <th>Casa</th>
+          <th>Imóvel</th>
+          <th></th>
+          <th></th>
+          <th>1</th>
+          <th>R$ 220.000,00</th>
+          <th>R$ 220.000,00</th>
+  
+  
+      </tr>
+      <tr>
+          <th>Lote</th>
+          <th>Terreno</th>
+          <th></th>
+          <th></th>
+          <th>1</th>
+          <th>R$ 90.000,00</th>
+          <th>R$ 90.000,00</th>
+      <tr>
+  
+      </tr>
+          <th>Carro</th>
+          <th>Veículo</th>
+          <th>Tiggo 5X</th>
+          <th>Chery</th>
+          <th>1</th>
+          <th>R$110.000,00</th>
+          <th>R$110.000,00</th>
+      <tr>
+  
+      </tr>
+      <tr>
+          <th>Televisão</th>
+          <th>Eletrodoméstico</th>
+          <th>Smart tv led 45 lg</th>
+          <th>LG</th>
+          <th>1</th>
+          <th>R$ 2.500</th>
+          <th>R$ 2.500</th>
+      </tr>
+      <tr>
+          <th>Geladeira</th>
+          <th>Eletrodoméstico</th>
+          <th>Geladeira/Refrigerador DC35A</th>
+          <th>Electrolux</th>
+          <th>1</th>
+          <th>R$ 2.098,99</th>
+          <th>R$ 2.098,99</th>
+      </tr>
+      <tr>
+          <th>Micro-Ondas</th>
+          <th>Eletrodoméstico</th>
+          <th>PMO23BB 20 Litros</th>
+          <th>Philco</th>
+          <th>1</th>
+          <th>R$ 567,95</th>
+          <th>R$ 567,95</th>
+      </tr>
+  </table>
+  
+      <!-- Parte do Formulário -->
+      <div>
+          <h3>Formulário de Contato</h1>
+          <form action="" method="">
             <p>
-              <label>
-                <input type="radio" name="avaliacao" value="excelente"> Excelente
-              </label>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome">
             </p>
             <p>
-              <label>
-                <input type="radio" name="avaliacao" value="bom"> Bom
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="radio" name="avaliacao" value="regular"> Regular
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="radio" name="avaliacao" value="ruim"> Ruim
-              </label>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
             </p>
             <p>
               <input type="submit" value="Enviar">
             </p>
           </form>
-
+  
+  
+      <!-- Parte da pesquisa de Satisfação -->
+      </div>
+          <h3>Pesquisa de satisfação</h4>
+              <form action="" method="">
+              <p>Como você avalia a nossa Postagem:</p>
+              <p>
+                <label>
+                  <input type="radio" name="avaliacao" value="excelente"> Excelente
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="radio" name="avaliacao" value="bom"> Bom
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="radio" name="avaliacao" value="regular"> Regular
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="radio" name="avaliacao" value="ruim"> Ruim
+                </label>
+              </p>
+              <p>
+                <input type="submit" value="Enviar">
+              </p>
+            </form>
+</div>
 </body>
 </html>
