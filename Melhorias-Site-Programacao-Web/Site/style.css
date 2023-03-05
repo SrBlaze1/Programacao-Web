@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
+
 body {
   margin:0;
 }
@@ -42,7 +43,7 @@ p {
   padding: 0;
 }
 
-.flex { /*Flexbox for containers*/
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,8 +54,7 @@ p {
   position:relative;
   width: 100%;
   height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
+  margin-bottom:-7px; 
   max-height:150px;
 }
 
@@ -65,7 +65,7 @@ p {
   background-color: white;
 }
 
-/* Animation */
+/* Animatição */
 
 .parallax > use {
   animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
@@ -94,7 +94,7 @@ p {
     transform: translate3d(85px,0,0);
   }
 }
-/*Shrinking for mobile*/
+/*Configuração pro mobile*/
 @media (max-width: 768px) {
   .waves {
     height:40px;
@@ -108,7 +108,7 @@ p {
   }
 }
 
-/*Conteúdo principal*/
+/*Conteúdo principal de textos*/
 .title {
   margin: 200px;
 }
@@ -128,4 +128,10 @@ p{
   text-align: justify;
   text-indent: 50px;
   font-size:18px;
+}
+
+.divisor_pagina{
+margin: 10px 10px 10px 10px;
+display: block;
+
 }
