@@ -1,69 +1,80 @@
-/* Implementação do CSS para a barra de navegação */
+/*Define o estilo padrão para todos os elementos HTML */
 *{
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
-    a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-    }
-    
-    a:hover {
-    opacity: 0.7;
-    }
 
-    nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Lato', sans-serif;
-    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
-    color: white;
-    height: 8vh;
-    }
-    
-    .nav-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 999;
-    padding:  20px;
-    }
-    
-    .nav-list {
-    top: calc(8vh + 50px); /* altura da barra de navegação = 50px */
-    left: 0;
-    height: calc(92vh - 50px); /* subtrai a altura da barra de navegação */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    }
-    
-    .nav-list a {
-    color: #fff;
-    text-decoration: none;
-    margin: 20px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    }
-    .mobile-menu.active ~ .nav-list li {
-        opacity: 1;
-        animation: navLinkFade 0.5s ease forwards;
-        }
-        
-        .mobile-menu.active {
-        transform: translateX(-5px);
-        }
-        
-        .nav-logo {
-        margin-left: 5%;
-        font-size: 2rem;
-        font-weight: 600;
-        letter-spacing: 5px;
-        }
+/* Define o estilo para os links */
+a {
+color: #fff;
+text-decoration: none;
+transition: 0.3s;
+}
+
+/* Define o estilo para quando o mouse estiver sobre o link */
+a:hover {
+opacity: 0.7;
+}
+
+/* Define o estilo para a barra de navegação */
+nav {
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-family: 'Lato', sans-serif;
+background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+color: white;
+height: 8vh;
+}
+
+/* Define o estilo para o contêiner da barra de navegação */
+.nav-container {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #fff;
+z-index: 999;
+padding: 20px;
+}
+
+/* Define o estilo para a lista de navegação */
+.nav-list {
+top: calc(8vh + 50px);
+left: 0;
+height: calc(92vh - 50px);
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+}
+
+/* Define o estilo para os links na lista de navegação */
+.nav-list a {
+color: #fff;
+text-decoration: none;
+margin: 20px 20px;
+font-size: 18px;
+font-weight: bold;
+}
+
+/* Define o estilo para os itens da lista de navegação quando o menu móvel estiver ativo */
+.mobile-menu.active ~ .nav-list li {
+opacity: 1;
+animation: navLinkFade 0.5s ease forwards;
+}
+
+/* Define o estilo para o menu móvel quando estiver ativo */
+.mobile-menu.active {
+transform: translateX(-5px);
+}
+
+/* Define o estilo para o logotipo da barra de navegação */
+.nav-logo {
+margin-left: 5%;
+font-size: 2rem;
+font-weight: 600;
+letter-spacing: 5px;
+}

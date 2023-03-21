@@ -1,0 +1,54 @@
+/* Estilo para o rodapé */
+footer {
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo para os links do rodapé */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Estilo para o logotipo no rodapé */
+footer img {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px;
+  }
+
+  footer img {
+    width: 30px;
+  }
+}
+
+/* Estilo para o texto no rodapé */
+footer p {
+  color: #fff;
+  text-align: left;
+}
+
+/* Estilo para os links no rodapé */
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilo para o texto do título no rodapé */
+footer h2 {
+  color: #fff;
+  text-align: left;
+}
