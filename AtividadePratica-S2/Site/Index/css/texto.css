@@ -70,17 +70,17 @@ Conteúdo principal de textos
       text-indent: 50px;
       }
       }
-      /*Configuração para ajustar a posição do ícone e o tamanho da logo para dispositivos menores*/
-      @media (max-width: 425px) {
-      .logo {
-      width: 30px;
-      padding-right: 10px;
-      }
-      #imgprincipal{
-      width: 80%;
-      }
-      .flex {
-      flex-wrap: wrap;
-      }
-      }
-      
+  
+  /* Configuração para ajustar a posição do ícone e o tamanho da logo para dispositivos com largura máxima de 425px */
+  @media (max-width: 425px) {
+  .logo {
+  width: 30px;
+  padding-right: 10px;
+  }
+  #imgprincipal{
+  width: 80%;
+  }
+  .flex {
+  flex-wrap: wrap;
+  }
+  }      
