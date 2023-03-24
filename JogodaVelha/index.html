@@ -1,0 +1,90 @@
+
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Carlos Eduardo Cunha Ribeiro
+DATA: 24/03/2023 -->
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha - React</title>
+    <link rel="stylesheet" href="TicTacToe.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/prop-types@15/umd/prop-types.min.js"></script>
+    <script type="text/babel">
+      const { useState } = React;
+        // Definição do componente TicTacToe como uma função React
+      const TicTacToe = () => {
+           // Definição dos estados iniciais do jogo
+        const [board, setBoard] = useState(Array(9).fill(null));
+        const [currentPlayer, setCurrentPlayer] = useState('X');
+        const [winner, setWinner] = useState(null);
+
+         // Função para verificar se há um vencedor
+        const checkWinner = () => {
+          const winningConditions = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6],
+          ];
+
+          for (const condition of winningConditions) {
+            const [a, b, c] = condition;
+            if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+              return board[a];
+            }
+          }
+          return null;
+        };
+
+         // Função para lidar com o clique em uma célula do tabuleiro
+        const handleClick = (index) => {
+          if (!board[index] && !winner) {
+            const newBoard = [...board];
+            newBoard[index] = currentPlayer;
+            setBoard(newBoard);
+
+            const newWinner = checkWinner();
+            if (newWinner) {
+              setWinner(newWinner);
+            } else {
+              setCurrentPlayer(currentPlayer === 'X' ? 'O' : 'X');
+            }
+          }
+        };
+
+        // Função para renderizar uma célula do tabuleiro
+        const renderCell = (index) => (
+          <div className="cell" onClick={() => handleClick(index)}>
+            {board[index]}
+          </div>
+        );
+        // Renderização do componente TicTacToe em JSX
+        return (
+          <div className="tic-tac-toe">
+            <div className="status">
+              {winner ? `Vencedor: ${winner}` : `Jogador atual: ${currentPlayer}`}
+            </div>
+            <div className="board">
+              {Array.from({ length: 9 }, (_, index) => renderCell(index))}
+            </div>
+          </div>
+        );
+      };
+
+      ReactDOM.render(<TicTacToe />, document.getElementById('root'));
+    </script>
+  </body>
+</html>

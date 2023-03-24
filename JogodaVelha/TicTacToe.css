@@ -1,0 +1,44 @@
+/* Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Carlos Eduardo Cunha Ribeiro
+DATA: 24/03/2023 */
+
+/*Define a cor de fundo do body como cinza*/
+body {
+  background-color: rgb(126, 126, 126);
+  }
+  
+  /* Estiliza o componente TicTacToe */
+  .tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  /* Estiliza o componente de status */
+  .status {
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+  
+  /* Estiliza o tabuleiro do jogo */
+  .board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  }
+  
+  /* Estiliza as células do tabuleiro */
+  .cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  }
+
