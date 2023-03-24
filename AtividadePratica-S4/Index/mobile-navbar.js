@@ -1,3 +1,7 @@
+/* Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Carlos Eduardo Cunha Ribeiro
+DATA 23/03/2023*/
 /* Implementação da nav bar pro mobile*/ 
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {

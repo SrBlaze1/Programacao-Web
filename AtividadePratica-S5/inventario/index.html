@@ -1,0 +1,62 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Carlos Eduardo Cunha Ribeiro
+DATA 23/03/2023-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="inventario.js"></script>
+        <link rel="stylesheet" href="/AtividadePratica-S5/Site/Index/css/nav_bar.css">
+        <link rel="stylesheet" href="/AtividadePratica-S5/Site/inventario/index.css">
+        <link rel="stylesheet" href="/AtividadePratica-S5/Site/Index/css/rodape.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+        <title>Inventario Familiar</title>
+    </head>
+    <body>
+        <!--Criando uma barra de navegação-->
+        <header>
+            <nav>
+                <a class="nav_bar" href="/AtividadePratica-S5/Site/Index/Pagina_Inicial.html">
+                    <img src="/AtividadePratica-S5/Site/Imagens/logo_nav_bar.svg" alt="">
+                </a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/AtividadePratica-S5/Site/Index/Pagina_Inicial.html">Home</a></li>
+                    <li><a href="/AtividadePratica-S5/Site/Sobre/index.html">Sobre</a></li>
+                    <li><a href="/AtividadePratica-S5/Site/inventario/index.html">Monte seu
+                            Inventário</a></li>
+                    <li><a href="/AtividadePratica-S5/Site/login/login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main></main>
+        <script src="/AtividadePratica-S5/Site/Index/mobile-navbar.js"></script>
+
+        <!--Criando O inventário-->
+        <h1>Inventário de bens materiais</h1>
+        <form>
+            <label for="nome">Nome do Bem:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade"><br><br>
+            <button type="button" onclick="adicionarBem()">Adicionar</button>
+        </form>
+        <br>
+        <table id="inventario">
+            <tr>
+                <th>Nome do bem</th>
+                <th>Quantidade</th>
+            </tr>
+        </table>
+        <script src="/AtividadePratica-S5/Site/inventario/invetario.js"></script>
+        <script src="/AtividadePratica-S5/inventario/rodape.js"></script>
+    </body>
+</html>
