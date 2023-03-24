@@ -1,0 +1,62 @@
+/* Define a fonte do corpo do documento */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Define um estilo para o cabeçalho h1 */
+h1 {
+  color: #008080;
+  text-align: center;
+}
+
+/* Define um estilo para o formulário */
+form {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+/* Define um estilo para os rótulos dos campos do formulário */
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+}
+
+/* Define um estilo para os campos do formulário */
+.form-control {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Define um estilo para o botão de adicionar */
+.btn-primary {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Define um estilo para a tabela de inventário */
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Define um estilo para as células da tabela */
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Define um estilo para a linha de cabeçalho da tabela */
+.table-primary > thead > tr:first-child {
+  background-color: #008080;
+  color: #fff;
+}
