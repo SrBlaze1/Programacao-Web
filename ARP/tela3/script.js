@@ -4,37 +4,37 @@ Dev: Carlos Eduardo Cunha Ribeiro
 DATA: 31/03/2023 */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const searchForm = document.getElementById('search-form');
-    const patientList = document.getElementById('patient-list');
-  
-    const patients = [
-      { name: 'Carlos Eduardo', cpf: '839.579.190-96' },
-      { name: 'Gabriel Cintra', cpf: '257.007.490-09' },
-      { name: 'Sebastião Neto', cpf: '499.437.510-02' },
-      { name: 'Alexandre Oliveira', cpf: '928.453.380-58' },
-      { name: 'Luis Filipe Neuwirth', cpf: '682.390.430-54' },
-      { name: 'Douglas Leonel de Almeida', cpf: '370.074.100-65' },
-      { name: 'Thiago Silva', cpf: '924.298.720-48' },
-      { name: 'Melodias', cpf: '430.912.670-75' },
-    ];
-  
-    function displayPatients(patientsToDisplay) {
-      patientList.innerHTML = '';
-      patientsToDisplay.forEach(patient => {
-        const patientDiv = document.createElement('div');
-        patientDiv.innerHTML = `<strong>Nome:</strong> ${patient.name} <br> <strong>CPF:</strong> ${patient.cpf}`;
-        patientList.appendChild(patientDiv);
-      });
-    }
-  
-    searchForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const searchTerm = document.getElementById('search').value;
-      const filteredPatients = patients.filter(patient =>
-        patient.name.includes(searchTerm) || patient.cpf.includes(searchTerm)
-      );
-      displayPatients(filteredPatients);
+  const searchForm = document.getElementById('search-form');
+  const patientList = document.getElementById('patient-list');
+
+  const patients = [
+    { name: 'João Silva', cpf: '123.456.789-00' },
+    { name: 'Maria Souza', cpf: '987.654.321-00' },
+    { name: 'Pedro Santos', cpf: '456.123.789-00' },
+    { name: 'Camila Pereira', cpf: '789.321.456-00' },
+    { name: 'Lucas Oliveira', cpf: '654.987.321-00' },
+    { name: 'Julia Almeida', cpf: '321.789.456-00' },
+    { name: 'Ricardo Costa', cpf: '456.321.789-00' },
+    { name: 'Mariana Lima', cpf: '789.456.321-00' },
+  ];
+
+  function displayPatients(patientsToDisplay) {
+    patientList.innerHTML = '';
+    patientsToDisplay.forEach(patient => {
+      const patientDiv = document.createElement('div');
+      patientDiv.innerHTML = `<strong>Nome:</strong> ${patient.name} <br> <strong>CPF:</strong> ${patient.cpf}`;
+      patientList.appendChild(patientDiv);
     });
-  
-    displayPatients(patients);
+  }
+
+  searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const searchTerm = document.getElementById('search').value.trim().toLowerCase();
+    const filteredPatients = patients.filter(patient =>
+      patient.name.trim().toLowerCase().includes(searchTerm) || patient.cpf.trim().toLowerCase().includes(searchTerm)
+    );
+    displayPatients(filteredPatients);
   });
+
+  displayPatients(patients);
+});

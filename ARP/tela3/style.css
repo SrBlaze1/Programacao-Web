@@ -3,73 +3,128 @@ Disciplina de Programação Web
 Dev: Carlos Eduardo Cunha Ribeiro
 DATA: 31/03/2023 */
 
+
 /* Estilos gerais */
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  /* Define a fonte e a fonte secundária para o corpo do documento */
+  line-height: 1.6;
+  /* Define o espaçamento entre as linhas */
+  background-color: #f0f0f0;
+  /* Define a cor de fundo do documento */
+  margin: 0;
+  /* Remove as margens */
+  padding: 0;
+  /* Remove o preenchimento */
+}
+
+header {
+  background: #4CAF50;
+  /* Define a cor de fundo do cabeçalho */
+  color: #fff;
+  /* Define a cor do texto do cabeçalho */
+  text-align: center;
+  /* Centraliza o texto do cabeçalho */
+  padding: 1rem;
+  /* Define o preenchimento do cabeçalho */
+  border-bottom: 3px solid #333;
+  /* Define a borda inferior do cabeçalho */
+}
+
+main {
+  background-color: #fff;
+  /* Define a cor de fundo da seção principal */
+  border-radius: 5px;
+  /* Define o raio das bordas da seção principal */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* Adiciona uma sombra à seção principal */
+  max-width: 800px;
+  /* Define a largura máxima da seção principal */
+  margin: 2rem auto;
+  /* Define a margem superior e inferior da seção principal e centraliza horizontalmente */
+  padding: 2rem;
+  /* Define o preenchimento da seção principal */
+}
+
+form {
+  display: grid;
+  /* Define um layout de grid para o formulário */
+  gap: 1rem;
+  /* Define o espaçamento entre os elementos do formulário */
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  /* Define o preenchimento do campo de entrada de texto */
+  border-radius: 5px;
+  /* Define o raio das bordas do campo de entrada de texto */
+  border: 1px solid #ccc;
+  /* Define a borda do campo de entrada de texto */
+}
+
+label {
+  font-weight: bold;
+  /* Define a espessura da fonte do rótulo */
+  margin-bottom: 0.5rem;
+  /* Define a margem inferior do rótulo */
+  color: #333;
+  /* Define a cor do texto do rótulo */
+}
+
+input[type="submit"] {
+  background: #4CAF50;
+  /* Define a cor de fundo do botão de envio */
+  color: #fff;
+  /* Define a cor do texto do botão de envio */
+  cursor: pointer;
+  /* Altera o cursor para um ponteiro ao passar o mouse sobre o botão */
+  padding: 0.7rem;
+  /* Define o preenchimento do botão de envio */
+  border-radius: 5px;
+  /* Define o raio das bordas do botão de envio */
+  border: none;
+  /* Remove a borda do botão de envio */
+  font-weight: bold;
+  /*Define a espessura da fonte do botão de envio */
+  transition: background-color 0.3s ease-in-out;
+  /* Adiciona uma transição suave à cor de fundo do botão de envio */
+}
+
+input[type="submit"]:hover {
+  background: #45a049;
+  /* Define a cor de fundo ao passar o mouse sobre o botão de envio */
+}
+
+.second-label {
+  font-weight: bold;
+  color: #333;
+  margin-top: 2rem;
+  /* Adiciona um espaço acima do elemento */
+  border-bottom: 2px solid #4CAF50;
+  /* Adiciona uma borda na parte inferior do elemento */
+  padding-bottom: 0.5rem;
+  /* Adiciona um espaço entre o texto e a borda inferior */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
   header {
-    background: #4CAF50;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    border-bottom: 3px solid #333;
-  }
-  
-  main {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
-    margin: 2rem auto;
-    padding: 2rem;
-  }
-  
-  form {
-    display: grid;
-    gap: 1rem;
-  }
-  
-  input, label {
-    display: block;
-    width: 100%;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  input[type="submit"] {
-    background: #4CAF50;
-    color: #fff;
-    cursor: pointer;
-    padding: 0.7rem;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
-  }
-  
-  input[type="submit"]:hover {
-    background: #45a049;
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 600px) {
-    header {
-      padding: 1rem 0;
-    }
-  
-    form {
-      margin: 1rem auto;
-    }
+    padding: 1rem 0;
+    /* Remove o padding superior e inferior do header */
   }
 
-  .second-label {
-    margin-top: 20px; /* Ajuste o valor conforme necessário */
+  form {
+    margin: 1rem auto;
+    /* Centraliza o formulário */
   }
-  
+}
+
+@media (max-width: 400px) {
+  main {
+    max-width: 95%;
+    /* Define a largura máxima do main para 95% */
+    padding: 1rem;
+    /* Adiciona um espaço interno de 1rem no main */
+  }
+}
