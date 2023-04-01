@@ -1,0 +1,41 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Carlos Eduardo Cunha Ribeiro
+DATA: 31/03/2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/ARP/Tela1/navbar.css">
+  <script defer src="script.js"></script>
+  <title>Pacientes</title>
+</head>
+<body>
+
+  <nav>
+    <a href="Cadastro.html">Cadastro</a>
+    <a href="Agendamento.html">Agendamento</a>
+    <a href="Consulta.html">Consulta</a>
+    <a href="ConsultasdeConsultas.html">Consultas de consultas</a>
+    <a href="listaMedicamento.html">Lista de medicamentos</a>
+  </nav>
+
+  <header>
+    <h1>Consulta de Pacientes</h1>
+  </header>
+  <main>
+    <form id="search-form">
+      <label for="search">Buscar paciente por nome ou CPF:</label>
+      <input type="text" id="search" required>
+      <input type="submit" value="Buscar">
+    </form>
+    <label class="second-label" for="search">Lista de Pacientes:</label>
+    <div id="patient-list">
+      <!-- Lista de pacientes será inserida aqui -->
+    </div>
+  </main>
+</body>
+</html>

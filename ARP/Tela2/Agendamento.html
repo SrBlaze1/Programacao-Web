@@ -1,0 +1,61 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Carlos Eduardo Cunha Ribeiro
+DATA: 31/03/2023 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agendamento de Consultas</title>
+	<link rel="stylesheet" href="style.css"> </head>
+	<link rel="stylesheet" href="/ARP/Tela1/navbar.css">
+  
+<body>
+	<nav>
+		<a href="Cadastro.html">Cadastro</a>
+		<a href="Agendamento.html">Agendamento</a>
+		<a href="Consulta.html">Consulta</a>
+		<a href="ConsultasdeConsultas.html">Consultas de consultas</a>
+		<a href="listaMedicamento.html">Lista de medicamentos</a>
+	</nav>
+
+	<header>
+		<h1>Agendamento de Consultas</h1> </header>
+	<main>
+		<form id="appointment-form">
+			<div>
+				<label for="calendar">Data *</label>
+				<input type="date" id="calendar" required> </div>
+			<div>
+				<label for="time">Horário *</label>
+				<input type="time" id="time" required> </div>
+			<div>
+				<label for="doctor">Médico *</label>
+				<select id="doctor" required>
+					<option value="">Selecione o médico</option>
+					<!-- Adicione as opções de médicos aqui -->
+					<option value="dr1">Dr. João Silva</option>
+					<option value="dr2">Dra. Maria Santos</option>
+					<option value="dr3">Dr. Pedro Oliveira</option>
+				</select>
+			</div>
+			<div>
+				<label for="appointment-type">Tipo de consulta *</label>
+				<select id="appointment-type" required>
+					<option value="">Selecione o tipo de consulta</option>
+					<option value="consulta1">Consulta 1</option>
+					<option value="consulta2">Consulta 2</option>
+					<option value="consulta3">Consulta 3</option>
+					<!-- Adicione mais opções de tipos de consulta aqui -->
+				</select>
+			</div>
+			<button type="submit">Agendar</button>
+		</form>
+	</main>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

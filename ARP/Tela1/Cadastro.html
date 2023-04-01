@@ -1,0 +1,47 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Carlos Eduardo Cunha Ribeiro
+DATA: 31/03/2023 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cadastro de Pacientes</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="navbar.css">
+	</head>
+	<body>
+
+		<nav>
+			<a href="Cadastro.html">Cadastro</a>
+			<a href="Agendamento.html">Agendamento</a>
+			<a href="Consulta.html">Consulta</a>
+			<a href="ConsultasdeConsultas.html">Consultas de consultas</a>
+			<a href="listaMedicamento.html">Lista de medicamentos</a>
+		</nav>
+
+		<header>
+			<h1>Cadastro de Pacientes</h1>
+		</header>
+		<main>
+			<form id="patient-form">
+				<!-- Campos do formulário -->
+				<label for="name">Nome *</label>
+				<input type="text" id="name" name="name" required>
+				<label for="birthdate">Data de Nascimento *</label>
+				<input type="date" id="birthdate" name="birthdate" required>
+				<label for="cpf">CPF *</label>
+				<input type="text" id="cpf" name="cpf" required>
+				<label for="address">Endereço *</label>
+				<input type="text" id="address" name="address" required>
+				<label for="phone">Telefone *</label>
+				<input type="tel" id="phone" name="phone" required>
+				<input type="submit" value="Cadastrar">
+			</form>
+		</main>
+		<script src="script.js"></script>
+	</body>
+
+</html>
