@@ -32,7 +32,8 @@ font-weight: bold;
 
 /* Define os estilos para os links da barra de navegação quando passar o mouse em cima */
 nav a:hover {
-text-decoration: underline;
+text-decoration: white;
+text-align: left;
 }
 
 /* Define os estilos para o cabeçalho da página */

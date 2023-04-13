@@ -18,6 +18,10 @@ body {
   padding: 0;
   /* Remove o preenchimento */
 }
+nav a:hover {
+  text-decoration: white;
+  text-align: left;
+  }
 
 header {
   background: #4CAF50;
