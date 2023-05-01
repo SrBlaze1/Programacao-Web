@@ -1,0 +1,71 @@
+
+/* Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Carlos Eduardo Cunha Ribeiro
+DATA: 01/05/2023 */
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adiciona um arquivo de estilo externo para personalizar o layout da página -->
+</head>
+<h1 class="display-4">Formulário de Pesquisa</h1>
+<form>
+    <label for="nome">Seu nome:</label> <!-- Cria um rótulo para o campo "nome" -->
+    <input type="text" id="nome" name="nome">
+    <!-- Cria um campo de entrada de texto para que o usuário digite seu nome -->
+    <label for="pais">País:</label> <!-- Cria um rótulo para o campo "pais" -->
+    <select id="pais" name="pais"> <!-- Cria um menu suspenso com as opções de países -->
+        <option value="brasil">Brasil</option>
+        <option value="argentina">Argentina</option>
+        <option value="estados-unidos">Estados Unidos</option>
+        <option value="grecia">Grécia</option>
+    </select>
+
+    <label for="ativo">Ativo:</label> <!-- Cria um rótulo para o campo "ativo" -->
+    <input type="checkbox" id="ativo" name="ativo">
+    <!-- Cria uma caixa de seleção para indicar se o usuário está ativo ou não -->
+
+    <button type="submit">Enviar</button> <!-- Cria um botão de envio do formulário -->
+</form>
+<h1 class="display-4">Tabela</h1>
+<table> <!-- Cria uma tabela para exibir dados -->
+    <thead> <!-- Define o cabeçalho da tabela -->
+        <tr> <!-- Define uma linha da tabela -->
+            <th>Nome</th> <!-- Define uma coluna da tabela para exibir nomes -->
+            <th>Idade</th> <!-- Define uma coluna da tabela para exibir idades -->
+        </tr>
+    </thead>
+    <tbody> <!-- Define o corpo da tabela -->
+        <tr> <!-- Define uma linha da tabela -->
+            <td>João</td> <!-- Define uma célula da tabela para exibir o nome "João" -->
+            <td>25</td> <!-- Define uma célula da tabela para exibir a idade "25" -->
+        </tr>
+        <tr> <!-- Define uma linha da tabela -->
+            <td>Maria</td> <!-- Define uma célula da tabela para exibir o nome "Maria" -->
+            <td>30</td> <!-- Define uma célula da tabela para exibir a idade "30" -->
+        </tr>
+        <tr> <!-- Define uma linha da tabela -->
+            <td>Pedro</td> <!-- Define uma célula da tabela para exibir o nome "Pedro" -->
+            <td>22</td> <!-- Define uma célula da tabela para exibir a idade "22" -->
+        </tr>
+    </tbody>
+</table>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in risus et risus vulputate aliquam. Nullam molestie,
+    sem vel fringilla dignissim, mi magna eleifend dolor, eget vestibulum lacus purus at lectus. Sed euismod vel velit
+    ut fringilla. Donec auctor ex vel augue porttitor, eget iaculis odio pellentesque. Integer interdum lorem a enim
+    aliquam, non volutpat nibh sagittis. Nam sed efficitur dolor, id ultricesquam. Aliquam eu quam vel dolor rhoncus
+    eleifend. Donec eget ipsum nisi. Suspendisse potenti. Aenean a faucibus quam. Aenean eget facilisis odio. </p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<a href="#">Link</a>
+
+</body>
+
+</html>

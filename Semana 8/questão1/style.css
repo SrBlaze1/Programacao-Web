@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  form select, form input[type="text"] {
+    display: block;
+    margin-bottom: 12px;
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  form button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    padding: 6px;
+    text-align: left;
+    border: 2px solid #ccc;
+  }
+  
+  table th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
