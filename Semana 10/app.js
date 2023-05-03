@@ -14,7 +14,7 @@ let inventory = [
   { id: 2, name: 'Mesa', quantity: 1 },
 ];
 
-// CREATE
+// Create
 app.post('/api/inventory', (req, res) => {
   const { name, quantity } = req.body;
   const id = inventory.length + 1;
@@ -23,12 +23,12 @@ app.post('/api/inventory', (req, res) => {
   res.send({ message: 'Item adicionado com sucesso!', inputs: item });
 });
 
-// READ ALL
+// ler todo
 app.get('/api/inventory', (req, res) => {
   res.send(inventory);
 });
 
-// READ ONE
+// Ler o primeiro
 app.get('/api/inventory/:id', (req, res) => {
   const { id } = req.params;
   const item = inventory.find((item) => item.id === parseInt(id));
@@ -36,7 +36,7 @@ app.get('/api/inventory/:id', (req, res) => {
   res.send(item);
 });
 
-// UPDATE
+// Update
 app.put('/api/inventory/:id', (req, res) => {
   const { id } = req.params;
   const { name, quantity } = req.body;
@@ -47,7 +47,7 @@ app.put('/api/inventory/:id', (req, res) => {
   res.send({ message: 'Item atualizado com sucesso!', inputs: item });
 });
 
-// DELETE
+// Delete
 app.delete('/api/inventory/:id', (req, res) => {
   const { id } = req.params;
   const item = inventory.find((item) => item.id === parseInt(id));
