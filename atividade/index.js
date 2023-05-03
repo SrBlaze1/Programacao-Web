@@ -1,9 +1,18 @@
+/* Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Carlos Eduardo Cunha Ribeiro
+DATA: 02/05/2023 */
+
+// Importa o módulo express e cria uma instância do mesmo
 const express = require('express');
 const app = express();
 
+// Define o uso do middleware json e urlencoded do express
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Cria a classe InventoryModel que contém um array de objetos
+// e métodos para realizar operações CRUD no array
 class InventoryModel {
   constructor() {
     this.inventory = [
@@ -44,6 +53,8 @@ class InventoryModel {
   }
 }
 
+// Cria a classe InventoryController que contém métodos que serão
+// utilizados nas rotas para executar as operações CRUD
 class InventoryController {
   constructor(model) {
     this.model = model;
@@ -84,7 +95,9 @@ class InventoryController {
   }
 }
 
+// Cria uma instância da classe InventoryModel e da classe InventoryController
 const inventoryModel = new InventoryModel();
+// Define as rotas para as operações CRUD utilizando os métodos da classe 
 const inventoryController = new InventoryController(inventoryModel);
 
 app.get('/api/inventory', inventoryController.getAllItems.bind(inventoryController));
@@ -93,10 +106,12 @@ app.post('/api/inventory', inventoryController.addItem.bind(inventoryController)
 app.put('/api/inventory/:id', inventoryController.updateItem.bind(inventoryController));
 app.delete('/api/inventory/:id', inventoryController.deleteItem.bind(inventoryController));
 
+// Define uma rota padrão para a página inicial do inventário
 app.get('/', (req, res) => {
   res.send('Bem-vindo ao inventário familiar!');
 });
 
+// Inicia o servidor na porta 3000
 app.listen(3000, () => {
   console.log('Servidor iniciado na porta 3000!');
 });
