@@ -23,12 +23,12 @@ app.post('/api/inventory', (req, res) => {
   res.send({ message: 'Item adicionado com sucesso!', inputs: item });
 });
 
-// ler todo
+// Read all
 app.get('/api/inventory', (req, res) => {
   res.send(inventory);
 });
 
-// Ler o primeiro
+// Read first
 app.get('/api/inventory/:id', (req, res) => {
   const { id } = req.params;
   const item = inventory.find((item) => item.id === parseInt(id));
