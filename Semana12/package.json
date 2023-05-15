@@ -1,0 +1,13 @@
+{
+    "name": "inventory-api",
+    "version": "1.0.0",
+    "description": "API de gerenciamento de inventário",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
